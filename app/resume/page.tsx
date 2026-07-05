@@ -7,7 +7,7 @@ export default function ResumePage() {
 
       <div className="w-full px-6 py-6">
         <iframe
-          src="/resume/NoahSejnoha_Resume.pdf"
+          src="/ns-portfolio/resume/NoahSejnoha_Resume.pdf"
           className="w-full h-[90vh]"
           title="Resume"
         />
