@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { Project } from "@/data/projects";
+import BaseLink from "@/components/BaseLink";
 
 type Props = {
   project: Project;
@@ -7,7 +8,7 @@ type Props = {
 
 export default function ProjectCard({ project }: Props) {
   return (
-    <Link href={`/projects/${project.id}`}>
+    <BaseLink href={`/projects/${project.id}`}>
       <div className="border border-zinc-800 rounded-lg p-6 hover:border-zinc-700 transition cursor-pointer">
         
         <h3 className="text-lg font-semibold">
@@ -27,6 +28,6 @@ export default function ProjectCard({ project }: Props) {
         </div>
 
       </div>
-    </Link>
+    </BaseLink>
   );
 }

@@ -1,7 +1,7 @@
-// for use in ProjectCard to display images for a project
 "use client";
 
 import { useState } from "react";
+import { BASE_PATH } from "@/lib/basePath";
 
 type Props = {
   images: string[];
@@ -11,19 +11,22 @@ type Props = {
 export default function ProjectGallery({ images, title }: Props) {
   const [selectedImage, setSelectedImage] = useState(images[0]);
 
+  const resolvePath = (src: string) =>
+    src.startsWith("/") ? `${BASE_PATH}${src}` : src;
+
   return (
     <div className="space-y-4">
 
       {/* MAIN IMAGE */}
       <div className="aspect-video border border-zinc-800 rounded-lg overflow-hidden bg-zinc-900">
         <img
-          src={selectedImage}
+          src={resolvePath(selectedImage)}
           alt={title}
           className="w-full h-full object-contain"
         />
       </div>
 
-      {/* THUMBNAILS (scrollable like Steam) */}
+      {/* THUMBNAILS */}
       <div className="flex gap-2 overflow-x-auto pb-2">
 
         {images.map((img) => (
@@ -38,7 +41,7 @@ export default function ProjectGallery({ images, title }: Props) {
               }`}
           >
             <img
-              src={img}
+              src={resolvePath(img)}
               alt=""
               className="w-full h-full object-contain"
             />
