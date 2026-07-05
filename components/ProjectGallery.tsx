@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { BASE_PATH } from "@/lib/basePath";
+import { repo } from "@/lib/repo";
 
 type Props = {
   images: string[];
@@ -11,8 +11,7 @@ type Props = {
 export default function ProjectGallery({ images, title }: Props) {
   const [selectedImage, setSelectedImage] = useState(images[0]);
 
-  const resolvePath = (src: string) =>
-    src.startsWith("/") ? `${BASE_PATH}${src}` : src;
+  const resolvePath = (src: string) => `${repo}${src}`;
 
   return (
     <div className="space-y-4">

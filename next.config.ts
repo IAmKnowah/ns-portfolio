@@ -5,7 +5,6 @@ const repo = "ns-portfolio";
 const nextConfig: NextConfig = {
 	output: "export",
 	basePath: `/${repo}`,
-	assetPrefix: `/${repo}/`,
 	trailingSlash: true,
 };
 
