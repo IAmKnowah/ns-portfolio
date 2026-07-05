@@ -28,11 +28,11 @@ export const projects: Project[] = [
 		],
 
 		images: [
-			"/projects/images/Idle-Beeing-Screenshot-1.png",
-			"/projects/images/Idle-Beeing-Screenshot-2.png",
-			"/projects/images/Idle-Beeing-Screenshot-3.png",
-			"/projects/images/Idle-Beeing-Screenshot-4.png",
-			"/projects/images/Idle-Beeing-Screenshot-5.png"
+			"/images/Idle-Beeing-Screenshot-1.png",
+			"/images/Idle-Beeing-Screenshot-2.png",
+			"/images/Idle-Beeing-Screenshot-3.png",
+			"/images/Idle-Beeing-Screenshot-4.png",
+			"/images/Idle-Beeing-Screenshot-5.png"
 		],
 		links: {
 			github:"...",
