@@ -36,8 +36,7 @@ export const projects: Project[] = [
 			"/images/Idle-Beeing-Screenshot-5.png"
 		],
 		links: {
-			download:"https://drive.google.com/file/d/1vygank2paaOFnmqcUVjkfwrQaZ-i8j_D/view?usp=drive_link",
-			github:"...",
+			download:"https://knowahthedev.itch.io/idle-beeing",
 			demo:"https://drive.google.com/file/d/1Y8fFfRlqH2BLIK0BXnH9zppETmm0kQZP/view?usp=drive_link"
 		}
 	},
@@ -57,7 +56,6 @@ export const projects: Project[] = [
 			"/images/Portfolio-Screenshot-3.png"
 		],
 		links: {
-			download: "...",
 			github: "https://github.com/IAmKnowah/ns-portfolio",
 			demo: "https://iamknowah.github.io/ns-portfolio/"
 		}
