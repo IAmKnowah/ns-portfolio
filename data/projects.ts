@@ -9,6 +9,7 @@ export type Project = {
 
 	images?: string[];
 	links?: {
+		download?: string;
 		github?: string;
 		demo?: string;
 	};
@@ -35,8 +36,30 @@ export const projects: Project[] = [
 			"/images/Idle-Beeing-Screenshot-5.png"
 		],
 		links: {
+			download:"https://drive.google.com/file/d/1vygank2paaOFnmqcUVjkfwrQaZ-i8j_D/view?usp=drive_link",
 			github:"...",
 			demo:"https://drive.google.com/file/d/1Y8fFfRlqH2BLIK0BXnH9zppETmm0kQZP/view?usp=drive_link"
 		}
 	},
+	{
+		id: "portfolio",
+		title: "NS Portfolio Website",
+		description: "My personal portfolio website, built with Next.js and TypeScript.",
+		longDescription: "This is my personal portfolio website, built with Next.js and TypeScript. It showcases my projects, skills, and experience as a software developer. It was custom made by myself.",
+		tech: ["Next.js", "TypeScript", "Tailwind CSS"],
+		features: [
+			"Showcases my projects, skills, and experience as a software developer.",
+			"Custom made design and implementation."
+		],
+		images: [
+			"/images/Portfolio-Screenshot-1.png",
+			"/images/Portfolio-Screenshot-2.png",
+			"/images/Portfolio-Screenshot-3.png"
+		],
+		links: {
+			download: "...",
+			github: "https://github.com/IAmKnowah/ns-portfolio",
+			demo: "https://iamknowah.github.io/ns-portfolio/"
+		}
+	}
 ];

@@ -77,15 +77,19 @@ export default async function ProjectPage({ params }: Props) {
           <h3 className="font-semibold">Links</h3>
 
           <div className="text-sm text-zinc-400 space-y-2">
-            <div>GitHub</div>
             {project.links?.demo && (
-              <a
-                href={project.links.demo}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block text-zinc-400 hover:text-white transition"
-              >
+              <a href={project.links.demo} target="_blank" rel="noopener noreferrer" className="block text-zinc-400 hover:text-white transition">
                 Demo
+              </a>
+            )}
+            {project.links?.github && (
+              <a href={project.links.github} target="_blank" rel="noopener noreferrer" className="block text-zinc-400 hover:text-white transition">
+                GitHub
+              </a>
+            )}
+            {project.links?.download && (
+              <a href={project.links.download} target="_blank" rel="noopener noreferrer" className="block text-zinc-400 hover:text-white transition">
+                Download
               </a>
             )}
           </div>
