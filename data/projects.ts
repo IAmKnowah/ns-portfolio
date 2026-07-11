@@ -21,7 +21,6 @@ export const projects: Project[] = [
 		title: "Idle Beeing",
 		description: "An idle game about bees, built in Unity with C#.",
 		longDescription: "Idle Beeing is a game in which you manage a beekeeping operation. You are tasked with discovering different types of flowers and the value of the honey they produce, all the while managing corn syrup and money.",
-		
 		tech: ["Unity", "C#", "UI Toolkit"],
 		features: [
 			"Save/Load system to ensure players don't have to restart upon loading.",
@@ -38,6 +37,24 @@ export const projects: Project[] = [
 		links: {
 			download:"https://knowahthedev.itch.io/idle-beeing",
 			demo:"https://drive.google.com/file/d/1Y8fFfRlqH2BLIK0BXnH9zppETmm0kQZP/view?usp=drive_link"
+		}
+	},
+	{
+		id: "heroes-die",
+		title: "Heroes' Die",
+		description: "A 2D tactical stealth strategy game, built in Unity with C#.",
+		longDescription: "Heroes' Die is a strategy round based game in which the main mechanics revolve around line of sight and stealth operations. The player manages a group of characters with abilities balanced around gaining and blocking lines of sight on the opposition.",
+		tech: ["Unity", "C#", "UI Toolkit"],
+		features: [
+			"Line of sight mechanics and careful information gathering.",
+			"Team manager that supports multiple entities on either side.",
+			"Robust sets of gadgets and abilities."
+		],
+		images: [
+			""
+		],
+		links:{
+			download:"https://knowahthedev.itch.io/heros-die"
 		}
 	},
 	{
