@@ -54,7 +54,7 @@ export const projects: Project[] = [
 			""
 		],
 		links:{
-			download:"https://knowahthedev.itch.io/heros-die"
+			download:"https://knowahthedev.itch.io/heroes-die"
 		}
 	},
 	{
